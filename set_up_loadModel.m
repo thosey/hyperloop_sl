@@ -1,7 +1,7 @@
 % Filename:     set_up_loadModel.m
 % Description:  Initializes the hyperllop_arc model
                 
-% Copyright 2013 - 2014 The MathWorks, Inc
+% Copyright 2013 - 2015 The MathWorks, Inc
 
 %% Load and downsample route data
 loadRouteData
@@ -13,7 +13,9 @@ lat0    = lat1(1);
 lon0    = lon1(1);
 
 %% Configure variants
-loadVariants
+loadVariants 
+
+%
 
 %% Load design parameters
 designPars

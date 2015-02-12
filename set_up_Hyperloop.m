@@ -9,6 +9,7 @@ function set_up_Hyperloop()
 % Use Simulink Project API to get the current project:
 project = simulinkproject;
 
+
 projectRoot = project.RootFolder;
 % Set the location of slprj to be the "work" folder of the current project:
 myCacheFolder = fullfile(projectRoot, 'work');
@@ -18,7 +19,8 @@ end
 Simulink.fileGenControl('set', 'CacheFolder', myCacheFolder, ...
     'CodeGenFolder', myCacheFolder);
 
-% Set the path for this project:
+
+%% Set the path for this project:
 folders = project_paths();
 for jj=1:numel(folders)
     addpath( fullfile(projectRoot, folders{jj}) );
